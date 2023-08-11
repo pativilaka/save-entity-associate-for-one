@@ -18,10 +18,11 @@ public class Person {
 
     public Person(){}
 
-    public Person(Long id, String name, Double salary) {
+    public Person(Long id, String name, Double salary, Department department) {
         this.id = id;
         this.name = name;
         this.salary = salary;
+        this.department = department;
     }
 
     public Long getId() {
@@ -46,5 +47,13 @@ public class Person {
 
     public void setSalary(Double salary) {
         this.salary = salary;
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 }
